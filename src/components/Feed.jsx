@@ -12,6 +12,11 @@ const Feed = () => {
       Copyright 2022 Youtube
     </Typography>
       </Box>
+      <Box>
+        <Typography>
+          New<span style={{color:'#F31503'}}>videos</span>
+        </Typography>
+      </Box>
     </Stack>
   )
 }
