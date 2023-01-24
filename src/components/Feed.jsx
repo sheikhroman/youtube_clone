@@ -10,7 +10,7 @@ const Feed = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetchFromAPI(`search?path=snippet&q=${selectedCategory}`)
+    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
     .then((data)=>setVideos(data.items))
   }, [selectedCategory]);
   return (
@@ -32,7 +32,7 @@ const Feed = () => {
           <Videos videos={videos} />
       </Box>
     </Stack>
-  )
-}
+  
+)}
 
 export default Feed
